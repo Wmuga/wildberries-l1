@@ -7,6 +7,11 @@ import (
 	"strings"
 )
 
+/*
+ * Разработать программу, которая переворачивает слова в строке.
+ * Пример: «snow dog sun — sun dog snow»
+ */
+
 func reverseWordsString(in string) string {
 	// представляем строку как слайс рун
 	data := strings.Split(in, " ")

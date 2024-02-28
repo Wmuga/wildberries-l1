@@ -9,6 +9,10 @@ import (
 	"time"
 )
 
+/*
+ * Реализовать все возможные способы остановки выполнения горутины.
+ */
+
 // Воркер с закрытием по контексту
 func wrkCtx(ctx context.Context, wg *sync.WaitGroup) {
 	defer wg.Done()

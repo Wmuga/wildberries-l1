@@ -5,6 +5,11 @@ import (
 	"fmt"
 )
 
+/*
+ * Дана переменная int64.
+ * Разработать программу которая устанавливает i-й бит в 1 или 0.
+ */
+
 var (
 	ErrTooLargeBit = errors.New("too large bit number")
 	ErrNegativeBit = errors.New("bit number is negative")

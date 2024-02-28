@@ -5,6 +5,10 @@ import (
 	"slices"
 )
 
+/*
+	Реализовать бинарный поиск встроенными методами языка.
+*/
+
 func binSearch(arr []int, elem int) int {
 	start := 0
 	end := len(arr) - 1

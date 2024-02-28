@@ -7,6 +7,10 @@ import (
 	"golang.org/x/exp/maps"
 )
 
+/*
+ * Реализовать конкурентную запись данных в map.
+ */
+
 // Ну вообще есть sync.Map. Но если мы хотим прям в map, да и с генериками
 type SyncMap[keyT comparable, valueT any] struct {
 	m   map[keyT]valueT

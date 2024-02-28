@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/*
+ * Реализовать быструю сортировку (quicksort) встроенными методами языка.
+ */
+
 // Запукс сортировки
 func quickSort(arr []int) {
 	quickSortRec(arr, 0, len(arr)-1)

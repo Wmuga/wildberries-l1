@@ -6,8 +6,12 @@ import (
 	"time"
 )
 
+/*
+ * Реализовать собственную функцию sleep
+ */
+
 func sleep(time time.Duration) {
-	// Используем таймаут конекста, чтобы знать когда "возвращаться к работе"
+	// Используем таймаут конекста, чтобы знать когда "просыпаться"
 	ctx, cancel := context.WithTimeout(context.Background(), time)
 	defer cancel()
 	<-ctx.Done()

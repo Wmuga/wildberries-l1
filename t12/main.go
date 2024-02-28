@@ -6,6 +6,11 @@ import (
 	"golang.org/x/exp/maps"
 )
 
+/*
+ * Имеется последовательность строк - (cat, cat, dog, cat, tree)
+ * Создать для нее собственное множество
+ */
+
 // Set будет состоять из мапы, значение - пустая структура
 type Set[T comparable] struct {
 	m map[T]struct{}
